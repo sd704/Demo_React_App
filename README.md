@@ -5,6 +5,7 @@ This is a demo react project.<br>
 **To run app locally, run these commands :**
 ```bash
 npm install
+npm build
 npm start
 ```
 
