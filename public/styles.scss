@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+}
+
+.loginpage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(-45deg, #ee7752, #ed538e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+
+    .container {
+        border-radius: 20px;
+        width: 70%;
+        height: 80%;
+        overflow: hidden;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.3);
+
+        @media only screen and (min-width: 320px) {
+            padding: 10px;
+            width: 80%;
+            height: 87%;
+        }
+        @media only screen and (min-width: 480px) {
+            padding: 15px;
+            width: 75%;
+            height: 85%;
+        }
+        @media only screen and (min-width: 768px) {
+            padding: 15px;
+            width: 25em;
+            height: 80%;
+        }
+        @media only screen and (min-width: 1024px) {
+            width: 25em;
+            height: 80%;
+            padding: 20px;
+        }
+
+        .form {
+            font-size: 16px;
+            width: 60vw;
+
+            .loading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+                img {
+                    height: 80px;
+                }
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+                margin: 0 auto 25px auto;
+            }
+
+            // input {
+            //     width: 25%;
+            //     display: block;
+            //     margin: 15px auto 15px auto;
+            //     border-radius: 20px;
+            //     overflow: hidden;
+            //     padding: 8px;
+            //     border: none;
+            //     outline: none;
+            //     // outline-color: yellow;
+            // }
+
+            .MuiTextField-root,
+            .pass {
+                display: block;
+                margin: 15px auto 15px auto;
+                width: 25%;
+
+                label,
+                svg {
+                    color: white;
+                }
+
+                .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+                    border-bottom: 1px solid white;
+                }
+
+                input,
+                select {
+                    -webkit-text-fill-color: black !important;
+                    -webkit-background-clip: text !important;
+                    background-clip: text !important;
+                }
+
+                @media only screen and (min-width: 320px) {
+                    width: 100%;
+                }
+                @media only screen and (min-width: 480px) {
+                    width: 75%;
+                }
+                @media only screen and (min-width: 768px) {
+                    width: 50%;
+                }
+                @media only screen and (min-width: 1024px) {
+                    width: 50%;
+                }
+            }
+
+            .btn {
+                width: 27%;
+                display: block;
+                margin: 15px auto 15px auto;
+                padding: 8px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                background-color: white;
+                color: gray;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: aliceblue;
+                }
+
+                &:active {
+                    background-color: blue;
+                    color: white;
+                }
+
+                @media only screen and (min-width: 320px) {
+                    width: 100%;
+                }
+                @media only screen and (min-width: 480px) {
+                    width: 77%;
+                }
+                @media only screen and (min-width: 768px) {
+                    width: 50%;
+                }
+                @media only screen and (min-width: 1024px) {
+                    width: 50%;
+                }
+            }
+
+            p {
+                color: white;
+                margin: 15px auto 15px auto;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: blue;
+                    cursor: pointer;
+                }
+            }
+
+            .error {
+                color: red !important;
+            }
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.homepage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(-45deg, #ee7752, #ed538e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+
+    .container {
+        border-radius: 20px;
+        width: 30%;
+        height: 80%;
+        // overflow: hidden;
+        overflow-y: scroll;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        background: rgba(255, 255, 255, 0.3);
+
+        
+        @media only screen and (min-width: 320px) {
+            padding: 10px;
+            width: 80%;
+            height: 87%;
+        }
+        @media only screen and (min-width: 480px) {
+            padding: 15px;
+            width: 75%;
+            height: 85%;
+        }
+        @media only screen and (min-width: 768px) {
+            padding: 15px;
+            width: 25em;
+            height: 80%;
+        }
+        @media only screen and (min-width: 1024px) {
+            width: 25em;
+            height: 80%;
+            padding: 20px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        // &::-webkit-scrollbar {
+        //     width: 5px;
+        // }
+        // /* Track */
+        // &::-webkit-scrollbar-track {
+        //     background: transparent;
+        // }
+        // /* Handle */
+        // &::-webkit-scrollbar-thumb {
+        //     background: #888;
+        //     border-radius: 20px;
+        // }
+        // /* Handle on hover */
+        // &::-webkit-scrollbar-thumb:hover {
+        //     background: #555;
+        // }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .user {
+            display: flex;
+            // background-color: rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                margin-right: 20px;
+                border-radius: 50px;
+            }
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid white;
+            margin: 0 0 10px 0;
+        }
+
+        .loading {
+            width: 50px;
+            align-self: center;
+            margin: auto;
+        }
+    }
+
+    .navbar {
+        position: absolute;
+        width: 28%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        padding: 10px;
+        bottom: 10%;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        
+        @media only screen and (min-width: 320px) {
+            width: 70%;
+        }
+        @media only screen and (min-width: 480px) {
+            width: 65%;
+        }
+        @media only screen and (min-width: 768px) {
+            width: 22em;
+        }
+        @media only screen and (min-width: 1024px) {
+            width: 24em;
+        }
+
+        span {
+            color: grey;
+        }
+
+        .logout {
+            color: blue;
+            cursor: pointer;
+        }
+    }
+}
